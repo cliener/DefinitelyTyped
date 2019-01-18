@@ -46,7 +46,10 @@ declare namespace WebpackDevServer {
 
     interface HistoryApiFallbackConfig {
         disableDotRule?: boolean;
+        htmlAcceptHeaders?: Array<string>;
+        index?: string;
         rewrites?: Rewrite[];
+        verbose?: boolean;
     }
 
     interface Configuration {
